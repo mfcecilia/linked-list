@@ -1,0 +1,5 @@
+A few specific comments:
+
+-	Really good commenting of the code!
+-	Good modularity.  Seems that you’ve defined distinct operations into their own functions.
+-	From a syntax perspective, it looks like you may be missing C and C++ concepts.  For example, it looks like the sortArr() function is embedded inside the getInput() function….kind of like C++ methods within a class.  C doesn’t really have the same notion.  If sortArr() is intended to be some sort of private function, then you might need to create a separate implementation file that exposes getInput() as a public function (so your main can call it) and then sortArr() could be a private function within that file.

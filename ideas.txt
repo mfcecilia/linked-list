@@ -1,0 +1,42 @@
+create an overall function to print arrays (see printInt() and printChar()).
+-----------> prtArr(array); ------> inspired by:
+printf("result array: %c%c%c%c \n", result[0], result[1], result[2], result[3]);
+
+create an overall function to loop through arrays (see printInt() and printChar()).
+-----------> loopArr(array);
+
+resultArr() and sortArry() defined outside of getInput() and getOutput() ----------> potentially solved using prtArr() and loopArr()
+
+
+
+
+
+
+IDEA 1
+keep input function as is.
+output function changes to add sorted 2d array directly to linked list (as long as the index contains a letter).
+
+IDEA 2
+add linked list at the beggining.
+make it the same size as the alphabet lookup table.
+when cross-checking alphabet lookup table in getinput function, add to linked list right away.
+sort within the linked list along the way.
+Is there a 2D linked list?
+
+
+
+RESEARCHED ONLINE....
+
+
+
+IDEA 3
+immediately add user input to linked list, then bubble sort.
+Bubble sort - compare elements one by one starting from the first 2. while the 2 being compared are not equal. if first element is bigger than second element, they swap places. 
+
+IDEA 4
+immediately add user input to linked list, then quick sort.
+place a "pivot" (the last element of the list) at the end of the list.
+we traverse through the list starting from the left side of the pivot, all the way down further left while executing the comparison partition.
+if a value is greater than the pivot, we move that value after the end of the list.
+if the value is less than the pivot, we leave it. 
+next we traverse the list from the right side of the pivot, all the way down further right while executing the comparison partition. 
